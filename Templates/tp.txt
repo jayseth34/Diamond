@@ -1,0 +1,16 @@
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">All</a></li>
+    <li><a class="dropdown-item" href="#">On Sale</a></li>
+    <li><a class="dropdown-item" href="#">Moissante Jewelry</a></li>
+    <li><a class="dropdown-item" href="#">Ring Wrap</a></li>
+    <li><a class="dropdown-item" href="#">Zodiac Jewelry</a></li>
+    <li><a class="dropdown-item" href="#">Pearl Jewelry</a></li>
+    <li><a class="dropdown-item" href="#">Morganite Jewelry</a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul> 
