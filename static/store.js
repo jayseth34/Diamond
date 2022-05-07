@@ -101,3 +101,8 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs ' + total
 }
+
+function changeText(){
+    var btn = document.getElementById(" buttonText");
+    btn.innerHTML = 'ADDED';
+}
