@@ -53,8 +53,8 @@
                         }
                     }
                     ?>
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($img); ?>" />
                     <hr>
-                    <!-- <img src="" alt=""> -->
 
         <?php
                 }
