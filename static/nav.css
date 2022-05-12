@@ -45,7 +45,7 @@ nav .wrapper{
   transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-  background: #FEFBE7;
+  background: #faedf9;
 }
 .nav-links .mobile-item{
   display: none;

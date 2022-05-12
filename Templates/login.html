@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="..\static\home.css" />
     <link rel="stylesheet" href="..\static\nav.css" />
     <link rel="stylesheet" href="..\static\footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
     <script>
@@ -91,7 +96,7 @@
       }
 
       .container {
-        padding: 16px;
+        padding: 40px;
       }
 
       span.psw {
@@ -137,7 +142,7 @@
 
       /* Set a style for all buttons */
       button {
-        background-color: #7d4c6b;
+        background-color: #851179;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -222,23 +227,26 @@
 
       /* Change styles for cancel button and signup button on extra small screens */
       @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
-  }
-}
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .mained {
-      width: 80%;
-      padding: 0;
-    }
-  }
-  @media only screen and (max-width:700px) {
-    /* For mobile phones: */
-    .mained, modal-content{
-      width: 100%;
-    }
-  }
+        .cancelbtn,
+        .signupbtn {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        /* For tablets: */
+        .mained {
+          width: 80%;
+          padding: 0;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        /* For mobile phones: */
+        .mained,
+        modal-content {
+          width: 100%;
+        }
+      }
+      
     </style>
     <script>
       // Get the modal
@@ -323,46 +331,47 @@
     </nav>
     <br />
     <br /><br /><br />
-    <div class="container">
-      <form action="/action_page.php" method="post">
-        <div class="imgcontainer">
-          <img
-            src="data:image/jpeg;base64,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"
-            alt="Avatar"
-            class="avatar"
-          />
-        </div>
-
+    <div class="container-lg">
+      <div class="container">
         <div class="container">
-          <label for="email"><b>Email ID</b></label>
-          <input type="email" placeholder="Enter Email" name="email" required />
+          <form action="/action_page.php" method="post">
+            <div class="container">
+              <label for="email"><b>Email ID</b></label>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
 
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
 
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
-          </label>
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color: #f1f1f1">
+              <button
+                class="sign-up"
+                onclick="document.getElementById('id01').style.display='block'"
+                style="width: auto"
+              >
+                Sign Up
+              </button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
         </div>
-
-        <div class="container" style="background-color: #f1f1f1">
-          <button
-            class="sign-up"
-            onclick="document.getElementById('id01').style.display='block'"
-            style="width: auto"
-          >
-            Sign Up
-          </button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
+      </div>
     </div>
 
     <div class="mained">
@@ -373,7 +382,7 @@
           title="Close Modal"
           >&times;</span
         >
-        <br><br>
+        <br /><br />
         <form class="modal-content" action="/action_page.php">
           <div class="container">
             <h1>Sign Up</h1>
@@ -435,22 +444,26 @@
 
     <!--footer-->
     <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Company Name © 2018</p>
-        </footer>
+      <footer>
+        <div class="social">
+          <a href="#"><i class="icon ion-social-instagram"></i></a
+          ><a href="#"><i class="icon ion-social-snapchat"></i></a
+          ><a href="#"><i class="icon ion-social-twitter"></i></a
+          ><a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Company Name © 2018</p>
+      </footer>
     </div>
 
-
     <!--end footer-->
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script
