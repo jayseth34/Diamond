@@ -1,16 +1,302 @@
-<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <li><a class="dropdown-item" href="#">All</a></li>
-    <li><a class="dropdown-item" href="#">On Sale</a></li>
-    <li><a class="dropdown-item" href="#">Moissante Jewelry</a></li>
-    <li><a class="dropdown-item" href="#">Ring Wrap</a></li>
-    <li><a class="dropdown-item" href="#">Zodiac Jewelry</a></li>
-    <li><a class="dropdown-item" href="#">Pearl Jewelry</a></li>
-    <li><a class="dropdown-item" href="#">Morganite Jewelry</a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-    <li><a class="dropdown-item" href="#"></a></li>
-  </ul> 
+<div id="top">
+  <div class="container_12">
+      <div class="grid_3">
+          <div class="lang">
+          </div><!-- .lang -->
+          
+          <div class="currency">
+          </div><!-- .currency -->
+      </div><!-- .grid_3 -->
+      
+      <div class="grid_12">
+          <nav>
+              <!-- <a class="menu-open" href="#">Menu</a> -->
+              <ul>
+                  <li class="current"><a href="#">My Account</a></li>
+                  <li><a href="/wishlist.html">My Wishlist</a></li>
+                  <li><a href="/login.html">Log In</a></li>
+                  <li><a href="/login.html">Sign Up</a></li>
+              </ul>
+          </nav>
+      </div><!-- .grid_9 -->
+  </div>
+</div><!-- #top -->
+
+<header id="branding">
+  <div class="container_12">
+      <div class="grid_3">
+          <hgroup>
+              <h1 id="site_logo"><a href="/" title=""><img src=" images\wom_jewels1.jpeg" style="height:100px;width:200px" alt="Online Store Theme Logo"></a></h1>
+              <h2 id="site_description"></h2>
+          </hgroup>
+      </div><!-- .grid_3 -->
+      
+      <div class="grid_9">
+          <div class="top_header">
+              <!-- <div class="welcome">
+                  <h1><b>Welcome to the online Diamond Store </b><h1>
+              </div> -->
+          </div><!-- .top_header -->
+      </div><!-- .grid_9 -->
+      
+      <div class="grid_9 primary-box">
+          <nav class="primary">
+              <a class="menu-select" href="#">Catalog</a>
+              <ul>
+                  <li style="background-color:#ffffe6">
+                      <select id = "myList" onchange = "favTutorial()" style="backgrond-color:#ffffe6">
+                          <option> Shop By Category </option>
+                          <option> All </option>
+                          <option> On Sale </option>
+                          <option> Moissante Jewelry </option>
+                          <option> Ring Wrap</option>
+                          <option> Zodiac Jewelry </option>
+                          <option> Pearl Jewelry </option>
+                          <option> Morganite Jewelry</option>
+                          <option> Natural Diamond Jewelry </option>
+                          <option> Engagement Rings </option>
+                          <option> Wedding Rings </option>
+                          <option> Cocktail Jewelry </option>
+                          <option> Ametrine Jewelry </option>
+                          <option> Necklace </option>
+                          <option> Earrings </option>
+                          <option> Bracelets </option>
+                          <option> Gold Chains </option>
+                          <option> Color Stone Jewelry </option>
+                          <option> Loose Gemstones </option>
+                          <option> Green Emerald Jewelry </option>
+                          </select></li>
+                  <li><a href="#arrivals">NEW ARRIVALS</a></li>
+                  <li><a href="shop.html">COLLECTION</a></li>
+              </ul>
+          </nav><!-- .primary -->
+      </div><!-- .grid_9 -->
+  </div>
+  <div class="clear"></div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--display images of product-->
+<div class = "card-wrapper">
+    <div class = "cardss">
+      <!-- card left -->
+      <div class = "product-imgs">
+        <div class = "img-display">
+          <div class = "img-showcase">
+            <img src = "images/ring.jpg" alt = "shoe image">
+            <img src = "images/diamond.jpg" alt = "shoe image">
+            <img src = "images/ring.jpg" alt = "shoe image">
+            <img src = "images/ring.jpg" alt = "shoe image">
+          </div>
+        </div>
+        <div class = "img-select">
+          <div class = "img-item">
+            <a href = "#" data-id = "1">
+              <img src = "images/diamond.jpg" alt = "shoe image">
+            </a>
+          </div>
+          <div class = "img-item">
+            <a href = "#" data-id = "2">
+              <img src = "images/diamond.jpg" alt = "shoe image">
+            </a>
+          </div>
+          <div class = "img-item">
+            <a href = "#" data-id = "3">
+              <img src = "images/diamond.jpg" alt = "shoe image">
+            </a>
+          </div>
+          <div class = "img-item">
+            <a href = "#" data-id = "4">
+              <img src = "images/diamond.jpg" alt = "shoe image">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card right -->
+      <div class = "product-content">
+        <h2 class = "product-title">nike shoes</h2>
+        <a href = "#" class = "product-link">visit nike store</a>
+        <div class = "product-rating">
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star-half-alt"></i>
+          <span>4.7(21)</span>
+        </div>
+
+        <div class = "product-price">
+          <p class = "last-price">Old Price: <span>$257.00</span></p>
+          <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+        </div>
+
+        <div class = "product-detail">
+          <h2>about this item: </h2>
+          <strong style="font-size:18px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</strong>
+          <strong style="font-size:18px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</strong>
+          <strong><ul style="font-size:15px;text-align:left">
+            <li>Color: <span>Black</span></li>
+            <li>Available: <span>in stock</span></li>
+            <li>Category: <span>Shoes</span></li>
+            <li>Shipping Area: <span>All over the world</span></li>
+            <li>Shipping Fee: <span>Free</span></li>
+          </ul></strong>
+        </div>
+
+        <div class = "purchase-info">
+          <input type = "number" min = "0" value = "1">
+          <button type = "button" class = "btn">
+            Add to Cart <i class = "fas fa-shopping-cart"></i>
+          </button>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+<hr><center><h2>REVIEWS</h2></center>
+
+
+
+  <!--testimonials-box-container------>
+  <div class="testimonial-box-container">
+    <!--BOX-1-------------->
+    <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                    <strong>Touseeq Ijaz</strong>
+                    <span>@touseeqijazweb</span>
+                </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i><!--Empty star-->
+            </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+    </div>
+    <!--BOX-2-------------->
+    <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                    <strong>J.K Rowling</strong>
+                    <span>@jkrowling</span>
+                </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><!--Empty star-->
+            </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+    </div>
+    <!--BOX-3-------------->
+    <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                    <strong>Harry Potter</strong>
+                    <span>@DanielRedclief</span>
+                </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i><!--Empty star-->
+            </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+    </div>
+    <!--BOX-4-------------->
+    <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                    <strong>Oliva</strong>
+                    <span>@Olivaadward</span>
+                </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i><!--Empty star-->
+            </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+    </div>
+</div>
+
+    <!--end display images of product-->

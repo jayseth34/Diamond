@@ -1192,7 +1192,6 @@ form.search:hover .search_button {
 /* Nav primary */
 .primary {
     margin: 9px 0 0 -15px;
-    position: relative;
 }
 .primary .menu-select {
     display: none;
