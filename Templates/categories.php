@@ -19,6 +19,8 @@ $conn = mysqli_connect("localhost", "root", "", "diamonds");
     <link rel="stylesheet" href="../static/home.css">
     <link rel="stylesheet" href="../static/cards.css">
     <script src="../static/store.js"></script>
+    <link rel="stylesheet" href="..\static\nav.css">
+    <link rel="stylesheet" href="..\static\footer.css" />
 
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
@@ -186,15 +188,15 @@ $conn = mysqli_connect("localhost", "root", "", "diamonds");
 </head>
 
 <body style="background-color:#ffffe6">
-    <div id="top">
+    <!-- <div id="top">
         <div class="container_12">
             <div class="grid_3">
                 <div class="lang">
-                </div><!-- .lang -->
+                </div>
 
                 <div class="currency">
-                </div><!-- .currency -->
-            </div><!-- .grid_3 -->
+                </div>
+            </div>
 
             <div class="grid_12">
                 <nav>
@@ -206,53 +208,78 @@ $conn = mysqli_connect("localhost", "root", "", "diamonds");
                         <li><a href="/login.html">Sign Up</a></li>
                     </ul>
                 </nav>
-            </div><!-- .grid_9 -->
+            </div>
         </div>
-    </div><!-- #top -->
+    </div> -->
 
-    <header id="branding">
-        <div class="container_12">
-            <div class="grid_3">
-                <hgroup>
-                    <h1 id="site_logo"><a href="/" title=""><img src="http://html.diamond.itembridge.com/img/logo.png" alt="Online Store Theme Logo"></a></h1>
-                    <h2 id="site_description">Online Store Theme</h2>
-                </hgroup>
-            </div><!-- .grid_3 -->
-
-            <div class="grid_9">
-                <div class="top_header">
-                    <div class="welcome">
-                        <h1><b>Welcome to the online Diamond Store </b>
-                            <h1>
-                    </div><!-- .welcome -->
-                </div><!-- .top_header -->
-            </div><!-- .grid_9 -->
-
-            <div class="grid_9 primary-box">
-                <nav class="primary">
-                    <a class="menu-select" href="#">Catalog</a>
-                    <ul>
-                        <li style="background-color:#ffffe6">
-                            <select id="myList" style="background-color:#ffffe6">
-                                <option> Shop By Category </option>
-                                <option> All </option>
-                                <option> On Sale </option>
-                                <option> Moissante Jewelry </option>
-                                <option> Ring Wrap</option>
-                                <option> Zodiac Jewelry </option>
-                                <option> Pearl Jewelry </option>
-                                <option> Morganite Jewelry</option>
-                                <option> Natural Diamond Jewelry </option>
-                            </select>
-                        </li>
-                        <li><a href="home.html">NEW ARRIVALS</a></li>
-                        <li><a href="home.html">COLLECTION</a></li>
+    <nav style="background-color:#FEFBE7">
+        <div class="wrapper">
+            <div class="logo"><img src="../images/wom_jewels1.jpeg" style="width:175px;height:70px"></img></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <!-- <li>
+                    <a href="#" class="desktop-item">Dropdown Menu</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Drop menu 1</a></li>
+                        <li><a href="#">Drop menu 2</a></li>
+                        <li><a href="#">Drop menu 3</a></li>
+                        <li><a href="#">Drop menu 4</a></li>
                     </ul>
-                </nav><!-- .primary -->
-            </div><!-- .grid_9 -->
+                </li> -->
+                <li>
+                    <a href="#" class="desktop-item">Mega Menu</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="../images/ring.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <header>Design Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Graphics</a></li>
+                                    <li><a href="#">Vectors</a></li>
+                                    <li><a href="#">Business cards</a></li>
+                                    <li><a href="#">Custom logo</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Email Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Personal Email</a></li>
+                                    <li><a href="#">Business Email</a></li>
+                                    <li><a href="#">Mobile Email</a></li>
+                                    <li><a href="#">Web Marketing</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Security services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Site Seal</a></li>
+                                    <li><a href="#">VPS Hosting</a></li>
+                                    <li><a href="#">Privacy Seal</a></li>
+                                    <li><a href="#">Website design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn">
+                <i class="fas fa-bars">
+                </i>
+            </label>
         </div>
-        <div class="clear"></div>
-    </header>
+    </nav>
+    <br>
 
     <hr>
 

@@ -9,7 +9,9 @@
 
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="..\static\home.css">
+    <link rel="stylesheet" href="..\static\nav.css">
+    <link rel="stylesheet" href="..\static\footer.css" />
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
     <script>
@@ -39,83 +41,78 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body style="background-color:#ffffe6">
-    <div id="top">
-        <div class="container_12">
-            <div class="grid_3">
-                <div class="lang">
-                </div><!-- .lang -->
-
-                <div class="currency">
-                </div><!-- .currency -->
-            </div><!-- .grid_3 -->
-
-            <div class="grid_12">
-                <nav>
-                    <!-- <a class="menu-open" href="#">Menu</a> -->
-                    <ul>
-                        <li class="current"><a href="#">My Account</a></li>
-                        <li><a href="/wishlist.html">My Wishlist</a></li>
-                        <li><a href="/login.html">Log In</a></li>
-                        <li><a href="/login.html">Sign Up</a></li>
+<body>
+    <nav style="background-color:#FEFBE7">
+        <div class="wrapper">
+            <div class="logo"><img src="../images/wom_jewels1.jpeg" style="width:175px;height:70px"></img></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <!-- <li>
+                    <a href="#" class="desktop-item">Dropdown Menu</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Drop menu 1</a></li>
+                        <li><a href="#">Drop menu 2</a></li>
+                        <li><a href="#">Drop menu 3</a></li>
+                        <li><a href="#">Drop menu 4</a></li>
                     </ul>
-                </nav>
-            </div><!-- .grid_9 -->
-        </div>
-    </div><!-- #top -->
-
-    <header id="branding">
-        <div class="container_12">
-            <div class="grid_3">
-                <hgroup>
-                    <h1 id="site_logo"><a href="/" title=""><img src="../images/wom_jewels1.jpeg" style="height:100px;width:200px" alt="Online Store Theme Logo"></a></h1>
-                    <h2 id="site_description"></h2>
-                </hgroup>
-            </div><!-- .grid_3 -->
-
-            <div class="grid_9">
-                <div class="top_header">
-                    <div class="welcome">
-                        <h1><b>Welcome to the online Diamond Store </b>
-                            <h1>
+                </li> -->
+                <li>
+                    <a href="#" class="desktop-item">Mega Menu</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="../images/ring.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="./categories.php?cid=1"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">On sale</a></li>
+                                    <li><a href="./categories.php?cid=2"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Moissanite Jewellery</a></li>
+                                    <li><a href="./categories.php?cid=3"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Ring Wrap</a></li>
+                                    <li><a href="./categories.php?cid=4"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Zodiac Jewellery</a></li>
+                                    <li><a href="./categories.php?cid=5"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Pearl Jewellery</a></li>
+                                    <li><a href="./categories.php?cid=6"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Morganite Jewellery</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="./categories.php?cid=13"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Natural Diamond</a></li>
+                                    <li><a href="./categories.php?cid=7"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Engagement Rings</a></li>
+                                    <li><a href="./categories.php?cid=8"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Wedding Rings</a></li>
+                                    <li><a href="./categories.php?cid=14"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Cocktail Jewellery</a></li>
+                                    <li><a href="./categories.php?cid=15"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Ametrine Jewellery</a></li>
+                                    <li><a href="./categories.php?cid=10"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Necklace</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="./categories.php?cid=9"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Earrings</a></li>
+                                    <li><a href="./categories.php?cid=11"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Bracelets</a></li>
+                                    <li><a href="./categories.php?cid=12"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Gold Chains</a></li>
+                                    <li><a href="./categories.php?cid=16"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Color Stones</a></li>
+                                    <li><a href="./categories.php?cid=17"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Loose Gemstones</a></li>
+                                    <li><a href="./categories.php?cid=18"><img src="../images/ring_resized.jpg" style="width:43px; height:35px; border-radius: 50%; margin-right: 5px;">Green Emerald</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div><!-- .top_header -->
-            </div><!-- .grid_9 -->
-            <?php
-            $conn = mysqli_connect('localhost', 'root', '', 'diamonds');
-            if ($conn) {
-                $query = "SELECT * FROM category_table";
-                $res = mysqli_query($conn, $query);
-            }
-            ?>
-            <div class="grid_9 primary-box">
-                <nav class="primary">
-                    <a class="menu-select" href="#">Catalog</a>
-                    <ul>
-                        <li style="background-color:#ffffe6">
-                            <select id="myList" style="background-color:#ffffe6" onchange="location = this.value;">
-                                <option value=""> Shop By Category </option>
-                                <?php
-                                if ($res) {
-                                    while ($row = mysqli_fetch_assoc($res)) {
-                                        $cat_id = $row['cat_id'];
-                                        $cat_name = $row['cat_name'];
-                                ?>
-                                        <option value="categories.php?cid=<?php echo $cat_id; ?>"><?php echo $cat_name; ?></option>
-                                <?php
-                                    }
-                                }
-                                ?>
-                            </select>
-                        </li>
-                        <li><a href="#arrivals">NEW ARRIVALS</a></li>
-                        <li><a href="shop.html">COLLECTION</a></li>
-                    </ul>
-                </nav><!-- .primary -->
-            </div><!-- .grid_9 -->
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn">
+                <i class="fas fa-bars">
+                </i>
+            </label>
         </div>
-        <div class="clear"></div>
-    </header>
+    </nav>
+    <br>
 
     <hr>
 
