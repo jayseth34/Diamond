@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 $conn = mysqli_connect("localhost", "root", "", "diamonds");
 
 if (isset($_GET['id'])) {
@@ -9,6 +10,45 @@ if (isset($_GET['id'])) {
         $res = mysqli_query($conn, $query);
     }
 }
+
+if (isset($_POST['submit'])) {
+    if (isset($_SESSION["shopping_cart"])) {
+        $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
+        if (!in_array($_GET["id"], $item_array_id)) {
+            $count = count($_SESSION["shopping_cart"]);
+            $item_array = array(
+                'item_id' => $_GET['id'],
+                'item_name' => $_POST['hid_name'],
+                'item_price' => $_POST['hid_price'],
+                'item_quan' => $_POST['quant']
+            );
+            $_SESSION["shopping_cart"][$count] = $item_array;
+        } else {
+            echo '<script>alert("Item already added")</script>';
+            echo '<script>window.location = "shop.php"</script>';
+        }
+    } else {
+        $item_array = array(
+            'item_id' => $_GET['id'],
+            'item_name' => $_POST['hid_name'],
+            'item_price' => $_POST['hid_price'],
+            'item_quan' => $_POST['quant']
+        );
+        $_SESSION["shopping_cart"][0] = $item_array;
+    }
+}
+
+// if (isset($_GET["action"])) {
+//     if ($_GET["action"] == "delete") {
+//         foreach ($_SESSION["shopping_cart"] as $keys => $values) {
+//             if ($values["item_id"] == $_GET["id"]) {
+//                 unset($_SESSION["shopping_cart"][$keys]);
+//                 echo '<script>alert("Item removed")</script>';
+//                 echo '<script>window.location = "shop.php"</script>';
+//             }
+//         }
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
@@ -132,51 +172,41 @@ if (isset($_GET['id'])) {
                                         $img8 = $row3['img8'];
                                         $img9 = $row3['img9'];
                                         $img10 = $row3['img10'];
-                                
-                                        if ($img1 != "NA")
-                                        {
+
+                                        if ($img1 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img1) . '"/></div>';
                                         }
-                                        if ($img2 != "NA")
-                                        {
+                                        if ($img2 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img2) . '"/></div>';
                                         }
-                                        if ($img3 != "NA")
-                                        {
+                                        if ($img3 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img3) . '"/></div>';
                                         }
-                                        if ($img4 != "NA")
-                                        {
+                                        if ($img4 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img4) . '"/></div>';
                                         }
-                                        if ($img5 != "NA")
-                                        {
+                                        if ($img5 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img5) . '"/></div>';
                                         }
-                                        if ($img6 != "NA")
-                                        {
+                                        if ($img6 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img6) . '"/></div>';
                                         }
-                                        if ($img7 != "NA")
-                                        {
+                                        if ($img7 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img7) . '"/></div>';
                                         }
-                                        if ($img8 != "NA")
-                                        {
+                                        if ($img8 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img8) . '"/></div>';
                                         }
-                                        if ($img9 != "NA")
-                                        {
+                                        if ($img9 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img9) . '"/></div>';
                                         }
-                                        if ($img10 != "NA")
-                                        {
+                                        if ($img10 != "NA") {
                                             echo '<div><img src="data:image/jpeg;base64,' . base64_encode($img10) . '"/></div>';
                                         }
-                                        
-                                        
+
+
                                         // <div><img src="../images/diamond.jpg"></div>
-                                
+
 
                                     }
                                 }
@@ -205,9 +235,14 @@ if (isset($_GET['id'])) {
                                 <span>(350 ratings)</span>
                             </div>
                             <p class="product-description"><?php echo $descr; ?></p>
-                            <!-- <div class="btn-groups">
-                                <button type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
-                            </div> -->
+                            <form method="post" action="products.php?action=add&id=<?php echo $id; ?>">
+                                <div class="btn-groups">
+                                    <input type="hidden" name="hid_name" value="<?php echo $descr; ?>">
+                                    <input type="hidden" name="hid_price" value="<?php echo $price; ?>">
+                                    <input type="number" name="quant" id="quan" min="1" value="1">
+                                    <input type="submit" class="add-cart-btn" name="submit"><i class="fas fa-shopping-cart"></i>add to cart
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
