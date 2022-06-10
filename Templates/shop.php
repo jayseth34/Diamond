@@ -335,10 +335,6 @@ if (isset($_GET["action"])) {
                                 ?>
                                 <div class="shop-item-details">
                                     <span class="shop-item-price">Rs <?php echo $price; ?></span>
-                                    <input type="number" name="quant" min="1" value="1" id="quant">
-                                    <input type="hidden" name="hid_name" value="<?php echo $descr; ?>">
-                                    <input type="hidden" name="hid_price" value="<?php echo $price; ?>">
-                                    <input type="submit" name="submit" value="ADD TO CART" class="btn btn-primary shop-item-button" style="background-color:#45b0ba">
                                 </div>
                         </div>
                         </form>
@@ -354,7 +350,7 @@ if (isset($_GET["action"])) {
         <br><br>
 
 
-        <!--cart display-->
+        <!--cart display
         <section class="container content-section" id="my-cart">
             <h2 class="section-header">CART</h2>
         </section>
@@ -372,34 +368,35 @@ if (isset($_GET["action"])) {
                 </thead>
                 <tbody>
                     <?php
-                    if (!empty($_SESSION["shopping_cart"])) {
-                        $total = 0;
-                        foreach ($_SESSION["shopping_cart"] as $keys => $values) {
+                    // if (!empty($_SESSION["shopping_cart"])) {
+                    //     $total = 0;
+                    //     foreach ($_SESSION["shopping_cart"] as $keys => $values) {
                     ?>
                             <tr>
-                                <td><?php echo $values['item_id']; ?></td>
-                                <td><?php echo $values['item_name']; ?></td>
-                                <td>Rs <?php echo $values['item_price']; ?></td>
-                                <td><?php echo $values['item_quan']; ?></td>
-                                <td><?php echo number_format($values["item_quan"] * $values["item_price"], 2) ?></td>
-                                <td><a href="shop.php?action=delete&id=<?php echo $values["item_id"] ?>" id="rm-itm"><span class="btn-sm btn-danger">Remove</span></a></td>
+                                <td><?php // echo $values['item_id']; ?></td>
+                                <td><?php // echo $values['item_name']; ?></td>
+                                <td>Rs <?php // echo $values['item_price']; ?></td>
+                                <td><?php // echo $values['item_quan']; ?></td>
+                                <td><?php // echo number_format($values["item_quan"] * $values["item_price"], 2) ?></td>
+                                <td><a href="shop.php?action=delete&id=<?php // echo $values["item_id"] ?>" id="rm-itm"><span class="btn-sm btn-danger">Remove</span></a></td>
                             </tr>
                         <?php
-                            $total = $total + ($values["item_quan"] * $values["item_price"]);
-                        } ?>
+                            // $total = $total + ($values["item_quan"] * $values["item_price"]);
+                        // } 
+                        ?>
                         <tr>
                             <td colspan="4">Total</td>
-                            <td>Rs <?php echo number_format($total, 2); ?></td>
+                            <td>Rs <?php // echo number_format($total, 2); ?></td>
                             <td></td>
                         </tr>
                     <?php
-                    }
+                    // }
                     ?>
                 </tbody>
             </table>
         </div>
 
-        <!--end cart display-->
+        end cart display-->
 
         <!--footer-->
         <footer>
